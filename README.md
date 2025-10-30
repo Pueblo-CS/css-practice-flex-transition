@@ -1,54 +1,34 @@
-# css-transition
+# css-flex-transition
 
-## Learning Target
-- I am reviewing box model properties, flex containers, and hover selectors 
-- I am learning how to use the CSS transition and transform properties to automatically animate between two states
+# Learning Target
+- I am reviewing flex boxes and transitions
 
-## Success Criteria
-- I can set initial and :hover or :active properties for an element in CSS (colors, border, position, etc.)
-- I can use the transition property to animate the transition to the hovered state
-- I can use the transform property to scale, rotate, or translate an element
-
+# Success Criteria
+- I can use flex container properties to create layouts (display, justify-content, align-items, flex-direction)
+- I can apply hover effects to elements
+- I can create use transitions to create smooth animations between different states
 
 
 ## Get started
 1. Install Live Server and Go Live to view how the webpage looks with no styling
-2. Follow directions below
+2. Follow directions below under **Your Tasks** to complete this assignment
+3. Commit and push, then copy your repository URL to submit on Canvas
 
-## Basic Page Styles
-Use **box model** and **flex** properties to style the page so it looks like the screenshots below.
-1. Follow along with my example for the nav
-2. You complete the gallery
-
-### Box Model Properties
-```css
-selector {
-    width: 50%;
-    height: auto;
-    padding: 20px;
-    border: 2px solid red;
-    margin: 20px;
-}
-```
+## Layout Goal
+![](assets/screenshot.png)
 
 ### Flex Container Properties
 ```css
 container {
     display: flex;
     flex-direction: row | column;
-    justify-content: start | end | center | space-around | space-between | space-evenly;
-    align-items: start | end | center | stretch;
+    justify-content: flex-start | flex-end | center | space-around | space-between | space-evenly;
+    align-items: flex-start | flex-end | center | stretch;
     flex-wrap: wrap | nowrap;
 }
 ```
 
-### Wide screen
-![](assets/screenshot1.png)
-
-### Narrow screen
-![](assets/screenshot2.png)
-
-## Transitions
+### Transitions
 ```css
 selector {
     transition: property duration timing-function;
@@ -57,14 +37,34 @@ selector {
 a {
     transition: background-color 1s ease;
 }
-```
-## Transform property
-```css
-selector {
-    transform: translate(x, y) | scale(%) | rotate(deg);
+
+button {
+    transition: all 0.3s ease-in-out;
 }
 ```
-1. Follow my example to add a transition for the a tags in the header to change background color and move up.  
-![](assets/screenshot3.png)
-2. Follow my example to add transistions for the gallery images to zoom-in and rotate.  
-![](assets/screenshot4.png)
+
+# Your Tasks
+## Task 1: Navigation Bar
+Complete the navigation styling in the designated section of ```styles.css```:
+
+- Make the ```.navbar``` a flex container
+- Use ```justify-content:``` ```space-between``` to space logo and links apart
+- Make the ```.nav-links``` a flex container with proper spacing between links
+- Style the links and logo appropriately
+
+## Task 2: Hover Effects and Transitions
+Add hover effects with smooth transitions:
+
+- Add hover effects to the navigation links that change background color
+- Add hover effects to the CTA button that change background color
+- Use CSS transitions to make the color changes smooth (not instant)
+- Make the ```.hero``` a flex container that centers content both horizontally and vertically
+
+## Success Checklist
+- [ ] Navigation bar uses display: flex and justify-content: space-between
+- [ ] Navigation links are in a horizontal flex container with gaps
+- [ ] Navigation links have hover effects with smooth transitions
+- [ ] Hero section uses flexbox to center content (justify-content: center and align-items: center)
+- [ ] CTA button has hover effects with smooth transitions
+- [ ] All transitions are smooth (not instant color changes)
+- [ ] Page looks professional and matches the layout diagram
