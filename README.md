@@ -10,9 +10,11 @@
 
 
 ## Get started
-1. Install Live Server and Go Live to view how the webpage looks with no styling
-2. Follow directions below under **Your Tasks** to complete this assignment
-3. Commit and push, then copy your repository URL to submit on Canvas
+1. Click the Green **Use template** button and create a new repository named *css-practice-flex-transition*
+2. Create a new codespace on main
+3. Install Live Server and Go Live to view how the webpage looks with no styling
+4. Follow directions below under **Your Tasks** to complete this assignment
+5. Commit and push, then copy your repository URL to submit on Canvas
 
 ## Layout Goal
 ![](assets/screenshot.png)
